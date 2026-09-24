@@ -15,9 +15,10 @@ body { margin: 0; }
 
 .page-shell {
   position: relative;
-  width: min(527px, calc(100% - 48px));
+  /* Reference: centered 12-column grid, 1200px max, with 17px block gutters. */
+  width: min(788.6667px, calc(66.666667vw - 38px));
   margin: 0 auto;
-  padding-top: 104px;
+  padding-top: min(123px, calc(62.0333px + 4.916667vw));
   padding-bottom: 80px;
 }
 
@@ -54,8 +55,9 @@ a:focus-visible {
 
 .portrait {
   display: block;
-  width: 106px;
-  height: 106px;
+  width: min(171.6667px, calc(16.666667vw - 35px));
+  height: auto;
+  aspect-ratio: 275 / 274;
   object-fit: cover;
   object-position: center;
 }
@@ -102,6 +104,7 @@ a:hover { text-decoration: underline; }
 .empty-state { color: #777; }
 
 @media (max-width: 600px) {
-  .page-shell { padding-top: 92px; }
+  .page-shell { width: calc(100% - 48px); padding-top: 92px; }
   .language-switch { top: 35px; }
+  .portrait { width: 106px; }
 }
