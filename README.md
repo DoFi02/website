@@ -12,4 +12,4 @@ Add objects to the array in `articles.js`. Each object needs a `title`, article 
 
 ## Publish with GitHub Pages
 
-Create a GitHub repository, add it as `origin`, and push the `main` branch. In the repository's **Settings → Pages**, choose **Deploy from a branch**, then select `main` and `/ (root)`. The site uses relative paths, so it works under a GitHub Pages project URL as well as a custom domain.
+The repository is [DoFi02/website](https://github.com/DoFi02/website), with `main` as its default branch. To publish it, open **Settings → Pages**, choose **Deploy from a branch**, then select `main` and `/ (root)`. The site uses relative paths, so it works under a GitHub Pages project URL as well as a custom domain.
